@@ -6,9 +6,7 @@ Ekstrak ZIP
 3. Klik dua kali pada Build_Projek_Folder.bat.
 4. Masukkan Nama Proyek
 5. Saat diminta, ketik nama proyek lalu tekan Enter.
-Proses Pembuatan Folder dan Dummy (untuk pertama kali, Dummy .prproj dan .amp tidak akan tergenerate, untuk 2x run dan seterusnya maka akan tergenerate secara otomatis)
-Script akan secara otomatis membuat struktur folder proyek.
-File dummy akan dipindahkan dan di-generate sesuai format yang diperlukan.
+Proses Pembuatan Folder dan Dummy (untuk pertama kali, Dummy .prproj dan .amp tidak akan tergenerate, untuk 2x run dan seterusnya maka akan tergenerate secara otomatis).
 6. Akses Proyek
 7. Setelah proses selesai, buka folder proyek yang telah dibuat.
 8. File dummy sudah tersedia dan siap digunakan.
