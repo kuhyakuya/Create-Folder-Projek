@@ -6,7 +6,7 @@ set /p project_name="Masukkan nama proyek: "
 
 :: Tentukan path utama proyek
 set "project_path=%CD%\%project_name%"
-set "shortcut_path=D:\01-Projek Shortcut"
+set "shortcut_path=D:\00-Projek Shortcut"
 set "hidden_dummy_path=D:\DummyHidden"
 
 :: === CEK APAKAH FOLDER DUMMYHIDDEN ADA, JIKA TIDAK, BUAT & SEMBUNYIKAN ===
