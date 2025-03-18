@@ -2,9 +2,9 @@
 setlocal enabledelayedexpansion
 
 :: Input nama proyek dari user
-set /p project_name="Masukkan nama proyek: "
+set /p project_name="Masukkan nama project: "
 
-:: Tentukan path utama proyek
+:: Tentukan path utama project
 set "project_path=%CD%\%project_name%"
 set "shortcut_path=D:\00-Projek Shortcut"
 set "hidden_dummy_path=D:\DummyHidden"
@@ -50,7 +50,7 @@ copy /Y "%hidden_dummy_path%\Dummy2.dat" "%project_path%\Adobe Files\%project_na
 attrib +h "%hidden_dummy_path%\Dummy1.dat" >nul 2>&1
 attrib +h "%hidden_dummy_path%\Dummy2.dat" >nul 2>&1
 
-:: === BUAT SHORTCUT KE PROYEK & FILE DUMMY ===
+:: === BUAT SHORTCUT KE PROJECT & FILE DUMMY ===
 if not exist "%shortcut_path%" mkdir "%shortcut_path%"
 
 powershell -ExecutionPolicy Bypass -Command "$s=(New-Object -COM WScript.Shell).CreateShortcut('%shortcut_path%\%project_name% - Folder.lnk'); $s.TargetPath='%project_path%'; $s.Save()"
