@@ -17,6 +17,6 @@ Catatan
 
 1. Jangan memodifikasi atau menghapus folder DummyHidden agar proses berjalan dengan lancar.
 2. Jika terjadi kesalahan, pastikan file dummy tersedia sebelum menjalankan Build_Projek_Folder.bat.
-3. saat masuk project permiere pro yang tergenerate otomatid dalam folder adobe files, pasti ada media offline, pastikan kamu menautkan ke projek .aep dalam folder adobe files tersebut.
+3. saat masuk project permiere pro yang tergenerate otomatis dalam folder adobe files, pasti ada media offline, pastikan kamu menautkan ke projek .aep dalam folder adobe files tersebut.
    
 Selamat bekerja! 🚀
