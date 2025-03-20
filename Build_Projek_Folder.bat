@@ -17,12 +17,12 @@ if not exist "%hidden_dummy_path%" (
 attrib +h "%hidden_dummy_path%" >nul 2>&1
 
 :: === PINDAHKAN FILE DUMMY KE FOLDER TERSEMBUNYI (REPLACE JIKA ADA) ===
-if exist "Dummy1.dat" move /Y "Dummy1.dat" "%hidden_dummy_path%\Dummy1.dat"
-if exist "Dummy2.dat" move /Y "Dummy2.dat" "%hidden_dummy_path%\Dummy2.dat"
+if exist "9681a60a-9dc4-45d7-9837-6aeae46facaf.dat" move /Y "9681a60a-9dc4-45d7-9837-6aeae46facaf.dat" "%hidden_dummy_path%\9681a60a-9dc4-45d7-9837-6aeae46facaf.dat"
+if exist "261740ad-ad29-48d7-9102-0f3e0e02d716.dat" move /Y "261740ad-ad29-48d7-9102-0f3e0e02d716.dat" "%hidden_dummy_path%\261740ad-ad29-48d7-9102-0f3e0e02d716.dat"
 
 :: === SHOW FILE DUMMY SEBELUM COPY ===
-attrib -h "%hidden_dummy_path%\Dummy1.dat" >nul 2>&1
-attrib -h "%hidden_dummy_path%\Dummy2.dat" >nul 2>&1
+attrib -h "%hidden_dummy_path%\9681a60a-9dc4-45d7-9837-6aeae46facaf.dat" >nul 2>&1
+attrib -h "%hidden_dummy_path%\261740ad-ad29-48d7-9102-0f3e0e02d716.dat" >nul 2>&1
 
 :: === BUAT STRUKTUR FOLDER PROYEK ===
 mkdir "%project_path%"
@@ -43,12 +43,12 @@ mkdir "%project_path%\Spine\Revisi"
 mkdir "%project_path%\Spine\Tambahan"
 
 :: === COPY FILE DUMMY KE FOLDER PROYEK DAN RENAME ===
-copy /Y "%hidden_dummy_path%\Dummy1.dat" "%project_path%\Adobe Files\%project_name%.prproj"
-copy /Y "%hidden_dummy_path%\Dummy2.dat" "%project_path%\Adobe Files\%project_name%.aep"
+copy /Y "%hidden_dummy_path%\9681a60a-9dc4-45d7-9837-6aeae46facaf.dat" "%project_path%\Adobe Files\%project_name%.prproj"
+copy /Y "%hidden_dummy_path%\261740ad-ad29-48d7-9102-0f3e0e02d716.dat" "%project_path%\Adobe Files\%project_name%.aep"
 
 :: === SEMBUNYIKAN KEMBALI FILE DUMMY DI D:\DummyHidden ===
-attrib +h "%hidden_dummy_path%\Dummy1.dat" >nul 2>&1
-attrib +h "%hidden_dummy_path%\Dummy2.dat" >nul 2>&1
+attrib +h "%hidden_dummy_path%\9681a60a-9dc4-45d7-9837-6aeae46facaf.dat" >nul 2>&1
+attrib +h "%hidden_dummy_path%\261740ad-ad29-48d7-9102-0f3e0e02d716.dat" >nul 2>&1
 
 :: === BUAT SHORTCUT KE PROJECT & FILE DUMMY ===
 if not exist "%shortcut_path%" mkdir "%shortcut_path%"
